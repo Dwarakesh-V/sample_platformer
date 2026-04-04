@@ -1,0 +1,88 @@
+[gd_scene format=3 uid="uid://d02g5atr3iyef"]
+
+[ext_resource type="FontFile" uid="uid://dwlvc8boe1fdb" path="res://brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="1_ncxyx"]
+[ext_resource type="Script" uid="uid://kw7qlvjk8q0j" path="res://button_start.gd" id="2_pevhg"]
+[ext_resource type="Script" uid="uid://bway5rus418uu" path="res://start.gd" id="3_afy8x"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_afy8x"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pevhg"]
+bg_color = Color(0.8901961, 0.65882355, 0, 1)
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=882960688]
+
+[node name="Control" type="Control" parent="." unique_id=296650611]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="Control" parent="Control" unique_id=921302883]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ins" type="Button" parent="Control/Control" unique_id=467944615]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -177.0
+offset_top = -13.0
+offset_right = 178.0
+offset_bottom = 112.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.8901961, 0.65882355, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_ncxyx")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxFlat_afy8x")
+theme_override_styles/hover = SubResource("StyleBoxFlat_pevhg")
+text = "Help"
+script = ExtResource("2_pevhg")
+
+[node name="start" type="Button" parent="Control/Control" unique_id=1084351690]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -177.0
+offset_top = -175.0
+offset_right = 178.0
+offset_bottom = -50.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.8901961, 0.65882355, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_ncxyx")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxFlat_afy8x")
+theme_override_styles/hover = SubResource("StyleBoxFlat_pevhg")
+text = "Start"
+script = ExtResource("3_afy8x")
+
+[connection signal="button_up" from="Control/Control/ins" to="Control/Control/ins" method="_on_button_up"]
+[connection signal="button_up" from="Control/Control/start" to="Control/Control/start" method="_on_button_up"]

@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://bgn3o0a58aoj3"]
+
+[ext_resource type="Script" uid="uid://cugqio7rwtfen" path="res://enemy.gd" id="1_4gyqm"]
+[ext_resource type="Texture2D" uid="uid://bok5w4u44a2gs" path="res://brackeys_platformer_assets/sprites/slime_green.png" id="2_qi2p4"]
+[ext_resource type="AudioStream" uid="uid://bg8a3vvaufudd" path="res://brackeys_platformer_assets/sounds/explosion.wav" id="3_qi2p4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iifgy"]
+atlas = ExtResource("2_qi2p4")
+region = Rect2(0, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_epg4t"]
+atlas = ExtResource("2_qi2p4")
+region = Rect2(24, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3yqyl"]
+atlas = ExtResource("2_qi2p4")
+region = Rect2(48, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wujgv"]
+atlas = ExtResource("2_qi2p4")
+region = Rect2(72, 24, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hb8ge"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iifgy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_epg4t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3yqyl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wujgv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e1ltt"]
+size = Vector2(10, 10)
+
+[node name="enemy" type="Node2D" unique_id=639284895]
+script = ExtResource("1_4gyqm")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=2050914244]
+collision_mask = 256
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D" unique_id=1603638361]
+position = Vector2(0, -12)
+sprite_frames = SubResource("SpriteFrames_hb8ge")
+autoplay = "default"
+frame = 1
+frame_progress = 0.404762
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=696301698]
+position = Vector2(0, -5)
+shape = SubResource("RectangleShape2D_e1ltt")
+
+[node name="rcr" type="RayCast2D" parent="Area2D" unique_id=111491541]
+target_position = Vector2(7, 0)
+
+[node name="rcl" type="RayCast2D" parent="Area2D" unique_id=484776081]
+target_position = Vector2(-7, 0)
+
+[node name="Timer" type="Timer" parent="." unique_id=1480092390]
+wait_time = 0.3
+one_shot = true
+
+[node name="Explosion" type="AudioStreamPlayer" parent="." unique_id=2030270530]
+stream = ExtResource("3_qi2p4")
+volume_db = -10.0
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
