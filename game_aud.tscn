@@ -5,3 +5,4 @@
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" unique_id=493607120]
 stream = ExtResource("1_es3i0")
 autoplay = true
+max_distance = 4096.0

@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://dd51dg2my10kv"]
+
+[ext_resource type="Script" uid="uid://cbtohpnrliina" path="res://enemy_purple.gd" id="1_nv61q"]
+[ext_resource type="Texture2D" uid="uid://dbn5lyto5ym4a" path="res://brackeys_platformer_assets/sprites/slime_purple.png" id="2_bu7g3"]
+[ext_resource type="AudioStream" uid="uid://bg8a3vvaufudd" path="res://brackeys_platformer_assets/sounds/explosion.wav" id="3_bu7g3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mlvjj"]
+atlas = ExtResource("2_bu7g3")
+region = Rect2(0, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kjwss"]
+atlas = ExtResource("2_bu7g3")
+region = Rect2(24, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bxk4u"]
+atlas = ExtResource("2_bu7g3")
+region = Rect2(48, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cgsll"]
+atlas = ExtResource("2_bu7g3")
+region = Rect2(72, 24, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_00o43"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mlvjj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kjwss")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bxk4u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cgsll")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 7.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xwjck"]
+size = Vector2(14, 11)
+
+[node name="Node2D" type="Node2D" unique_id=1730704515]
+script = ExtResource("1_nv61q")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1224381889]
+collision_mask = 256
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D" unique_id=439904642]
+position = Vector2(0, -12)
+sprite_frames = SubResource("SpriteFrames_00o43")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1421028142]
+position = Vector2(0, -5.5)
+shape = SubResource("RectangleShape2D_xwjck")
+
+[node name="Explosion" type="AudioStreamPlayer" parent="." unique_id=1718469583]
+stream = ExtResource("3_bu7g3")
+volume_db = -10.0
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

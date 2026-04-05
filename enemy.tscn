@@ -41,7 +41,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e1ltt"]
-size = Vector2(10, 10)
+size = Vector2(14, 13)
 
 [node name="enemy" type="Node2D" unique_id=639284895]
 script = ExtResource("1_4gyqm")
@@ -57,7 +57,7 @@ frame = 1
 frame_progress = 0.404762
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=696301698]
-position = Vector2(0, -5)
+position = Vector2(0, -6.5)
 shape = SubResource("RectangleShape2D_e1ltt")
 
 [node name="rcr" type="RayCast2D" parent="Area2D" unique_id=111491541]
@@ -66,13 +66,8 @@ target_position = Vector2(7, 0)
 [node name="rcl" type="RayCast2D" parent="Area2D" unique_id=484776081]
 target_position = Vector2(-7, 0)
 
-[node name="Timer" type="Timer" parent="." unique_id=1480092390]
-wait_time = 0.3
-one_shot = true
-
 [node name="Explosion" type="AudioStreamPlayer" parent="." unique_id=2030270530]
 stream = ExtResource("3_qi2p4")
 volume_db = -10.0
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
