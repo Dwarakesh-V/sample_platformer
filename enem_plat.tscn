@@ -1,0 +1,300 @@
+[gd_scene format=3 uid="uid://bc7fhjk081gf2"]
+
+[ext_resource type="PackedScene" uid="uid://dd51dg2my10kv" path="res://enemy_purple.tscn" id="1_gnsmx"]
+[ext_resource type="PackedScene" uid="uid://bgn3o0a58aoj3" path="res://enemy.tscn" id="2_k22gv"]
+
+[node name="Node2D" type="Node2D" unique_id=1815236826]
+
+[node name="enemy_purple_1" parent="." unique_id=1730704515 instance=ExtResource("1_gnsmx")]
+position = Vector2(1194, -150)
+scale = Vector2(-1, 1)
+
+[node name="enemy9" parent="." unique_id=639284895 instance=ExtResource("2_k22gv")]
+position = Vector2(1266, -357)
+
+[node name="enemy12" parent="." unique_id=56013849 instance=ExtResource("2_k22gv")]
+position = Vector2(1275, -428)
+scale = Vector2(-1, 1)
+
+[node name="enemy14" parent="." unique_id=699328192 instance=ExtResource("2_k22gv")]
+position = Vector2(1309, -494)
+scale = Vector2(-1, 1)
+
+[node name="enemy41" parent="." unique_id=1402627678 instance=ExtResource("2_k22gv")]
+position = Vector2(1275, -568)
+
+[node name="enemy42" parent="." unique_id=1744387786 instance=ExtResource("2_k22gv")]
+position = Vector2(1351, -537)
+
+[node name="enemy43" parent="." unique_id=252376716 instance=ExtResource("2_k22gv")]
+position = Vector2(1329, -603)
+scale = Vector2(-1, 1)
+
+[node name="enemy88" parent="." unique_id=513216990 instance=ExtResource("2_k22gv")]
+position = Vector2(1276, -669)
+scale = Vector2(-1, 1)
+
+[node name="enemy93" parent="." unique_id=60112706 instance=ExtResource("2_k22gv")]
+position = Vector2(1242, -503)
+
+[node name="enemy112" parent="." unique_id=1116853403 instance=ExtResource("2_k22gv")]
+position = Vector2(1194, -558)
+scale = Vector2(-1, 1)
+
+[node name="enemy113" parent="." unique_id=896538572 instance=ExtResource("2_k22gv")]
+position = Vector2(1145, -696)
+
+[node name="enemy114" parent="." unique_id=2015133008 instance=ExtResource("2_k22gv")]
+position = Vector2(1174, -633)
+
+[node name="enemy115" parent="." unique_id=1157103068 instance=ExtResource("2_k22gv")]
+position = Vector2(1219, -717)
+scale = Vector2(-1, 1)
+
+[node name="enemy45" parent="." unique_id=436221101 instance=ExtResource("2_k22gv")]
+position = Vector2(1340, -662)
+
+[node name="enemy25" parent="." unique_id=1768323613 instance=ExtResource("2_k22gv")]
+position = Vector2(1356, -729)
+
+[node name="enemy27" parent="." unique_id=1846485183 instance=ExtResource("2_k22gv")]
+position = Vector2(1383, -786)
+
+[node name="enemy26" parent="." unique_id=1208024765 instance=ExtResource("2_k22gv")]
+position = Vector2(1269, -769)
+
+[node name="enemy47" parent="." unique_id=427697538 instance=ExtResource("2_k22gv")]
+position = Vector2(1129, -779)
+scale = Vector2(-1, 1)
+
+[node name="enemy48" parent="." unique_id=1755680568 instance=ExtResource("2_k22gv")]
+position = Vector2(1183, -814)
+
+[node name="enemy49" parent="." unique_id=1600880624 instance=ExtResource("2_k22gv")]
+position = Vector2(1317, -844)
+
+[node name="enemy50" parent="." unique_id=1148510891 instance=ExtResource("2_k22gv")]
+position = Vector2(1168, -891)
+scale = Vector2(-1, 1)
+
+[node name="enemy51" parent="." unique_id=2088118783 instance=ExtResource("2_k22gv")]
+position = Vector2(1256, -852)
+scale = Vector2(-1, 1)
+
+[node name="enemy54" parent="." unique_id=630672477 instance=ExtResource("2_k22gv")]
+position = Vector2(1398, -875)
+scale = Vector2(-1, 1)
+
+[node name="enemy55" parent="." unique_id=377849348 instance=ExtResource("2_k22gv")]
+position = Vector2(1157, -998)
+
+[node name="enemy56" parent="." unique_id=319376548 instance=ExtResource("2_k22gv")]
+position = Vector2(1237, -997)
+scale = Vector2(-1, 1)
+
+[node name="enemy57" parent="." unique_id=1588023361 instance=ExtResource("2_k22gv")]
+position = Vector2(1286, -912)
+
+[node name="enemy58" parent="." unique_id=1372939835 instance=ExtResource("2_k22gv")]
+position = Vector2(1374, -949)
+scale = Vector2(-1, 1)
+
+[node name="enemy59" parent="." unique_id=1655303673 instance=ExtResource("2_k22gv")]
+position = Vector2(1302, -982)
+
+[node name="enemy32" parent="." unique_id=724654016 instance=ExtResource("2_k22gv")]
+position = Vector2(1462, -856)
+
+[node name="enemy85" parent="." unique_id=1546564766 instance=ExtResource("2_k22gv")]
+position = Vector2(1462, -932)
+
+[node name="enemy86" parent="." unique_id=426323525 instance=ExtResource("2_k22gv")]
+position = Vector2(1514, -989)
+scale = Vector2(-1, 1)
+
+[node name="enemy153" parent="." unique_id=2110861375 instance=ExtResource("2_k22gv")]
+position = Vector2(1862, -1213)
+
+[node name="enemy154" parent="." unique_id=260544998 instance=ExtResource("2_k22gv")]
+position = Vector2(1896, -1270)
+
+[node name="enemy52" parent="." unique_id=1024469886 instance=ExtResource("2_k22gv")]
+position = Vector2(1425, -1047)
+
+[node name="enemy53" parent="." unique_id=1954536051 instance=ExtResource("2_k22gv")]
+position = Vector2(1248, -1074)
+scale = Vector2(-1, 1)
+
+[node name="enemy61" parent="." unique_id=1621737806 instance=ExtResource("2_k22gv")]
+position = Vector2(1364, -1055)
+
+[node name="enemy62" parent="." unique_id=1953798071 instance=ExtResource("2_k22gv")]
+position = Vector2(1506, -1078)
+scale = Vector2(-1, 1)
+
+[node name="enemy63" parent="." unique_id=219624835 instance=ExtResource("2_k22gv")]
+position = Vector2(1299, -1151)
+
+[node name="enemy64" parent="." unique_id=1928750796 instance=ExtResource("2_k22gv")]
+position = Vector2(1342, -1214)
+
+[node name="enemy65" parent="." unique_id=1204128042 instance=ExtResource("2_k22gv")]
+position = Vector2(1394, -1115)
+scale = Vector2(-1, 1)
+
+[node name="enemy149" parent="." unique_id=867905333 instance=ExtResource("2_k22gv")]
+position = Vector2(1131, -1089)
+scale = Vector2(-1, 1)
+
+[node name="enemy150" parent="." unique_id=794929684 instance=ExtResource("2_k22gv")]
+position = Vector2(1192, -1131)
+
+[node name="enemy151" parent="." unique_id=1024146671 instance=ExtResource("2_k22gv")]
+position = Vector2(1122, -1221)
+scale = Vector2(-1, 1)
+
+[node name="enemy152" parent="." unique_id=468640574 instance=ExtResource("2_k22gv")]
+position = Vector2(1239, -1191)
+scale = Vector2(-1, 1)
+
+[node name="enemy66" parent="." unique_id=731483809 instance=ExtResource("2_k22gv")]
+position = Vector2(1482, -1152)
+
+[node name="enemy67" parent="." unique_id=1312738826 instance=ExtResource("2_k22gv")]
+position = Vector2(1421, -1195)
+scale = Vector2(-1, 1)
+
+[node name="enemy44" parent="." unique_id=1787980468 instance=ExtResource("2_k22gv")]
+position = Vector2(1570, -1059)
+
+[node name="enemy68" parent="." unique_id=1972744060 instance=ExtResource("2_k22gv")]
+position = Vector2(1653, -1057)
+
+[node name="enemy69" parent="." unique_id=1793231997 instance=ExtResource("2_k22gv")]
+position = Vector2(1645, -1130)
+scale = Vector2(-1, 1)
+
+[node name="enemy94" parent="." unique_id=50173487 instance=ExtResource("2_k22gv")]
+position = Vector2(1570, -1135)
+
+[node name="enemy95" parent="." unique_id=238686256 instance=ExtResource("2_k22gv")]
+position = Vector2(1614, -1200)
+scale = Vector2(-1, 1)
+
+[node name="enemy97" parent="." unique_id=1976309860 instance=ExtResource("2_k22gv")]
+position = Vector2(1704, -1174)
+scale = Vector2(-1, 1)
+
+[node name="enemy99" parent="." unique_id=1182073816 instance=ExtResource("2_k22gv")]
+position = Vector2(1793, -1175)
+
+[node name="enemy128" parent="." unique_id=114489439 instance=ExtResource("2_k22gv")]
+position = Vector2(2016, -1373)
+
+[node name="enemy129" parent="." unique_id=871682727 instance=ExtResource("2_k22gv")]
+position = Vector2(2107, -1362)
+
+[node name="enemy130" parent="." unique_id=1476234407 instance=ExtResource("2_k22gv")]
+position = Vector2(1976, -1414)
+scale = Vector2(-1, 1)
+
+[node name="enemy131" parent="." unique_id=1565165018 instance=ExtResource("2_k22gv")]
+position = Vector2(2171, -1353)
+scale = Vector2(-1, 1)
+
+[node name="enemy132" parent="." unique_id=1495337233 instance=ExtResource("2_k22gv")]
+position = Vector2(2066, -1420)
+scale = Vector2(-1, 1)
+
+[node name="enemy133" parent="." unique_id=106720820 instance=ExtResource("2_k22gv")]
+position = Vector2(2154, -1417)
+
+[node name="enemy100" parent="." unique_id=3121687 instance=ExtResource("2_k22gv")]
+position = Vector2(1782, -1253)
+scale = Vector2(-1, 1)
+
+[node name="enemy101" parent="." unique_id=228410087 instance=ExtResource("2_k22gv")]
+position = Vector2(1798, -1328)
+
+[node name="enemy102" parent="." unique_id=674857224 instance=ExtResource("2_k22gv")]
+position = Vector2(1729, -1368)
+
+[node name="enemy103" parent="." unique_id=1127868530 instance=ExtResource("2_k22gv")]
+position = Vector2(1938, -1367)
+
+[node name="enemy104" parent="." unique_id=11544027 instance=ExtResource("2_k22gv")]
+position = Vector2(1809, -1387)
+
+[node name="enemy105" parent="." unique_id=222591184 instance=ExtResource("2_k22gv")]
+position = Vector2(1869, -1342)
+scale = Vector2(-1, 1)
+
+[node name="enemy106" parent="." unique_id=1070675023 instance=ExtResource("2_k22gv")]
+position = Vector2(1950, -1315)
+scale = Vector2(-1, 1)
+
+[node name="enemy107" parent="." unique_id=300260126 instance=ExtResource("2_k22gv")]
+position = Vector2(2027, -1307)
+
+[node name="enemy108" parent="." unique_id=2081195061 instance=ExtResource("2_k22gv")]
+position = Vector2(1339, -1289)
+scale = Vector2(-1, 1)
+
+[node name="enemy109" parent="." unique_id=583366562 instance=ExtResource("2_k22gv")]
+position = Vector2(1143, -1306)
+
+[node name="enemy110" parent="." unique_id=955294973 instance=ExtResource("2_k22gv")]
+position = Vector2(1231, -1267)
+
+[node name="enemy111" parent="." unique_id=1254003539 instance=ExtResource("2_k22gv")]
+position = Vector2(1430, -1275)
+
+[node name="enemy134" parent="." unique_id=2082625776 instance=ExtResource("2_k22gv")]
+position = Vector2(1166, -1363)
+scale = Vector2(-1, 1)
+
+[node name="enemy135" parent="." unique_id=1946439205 instance=ExtResource("2_k22gv")]
+position = Vector2(1212, -1412)
+
+[node name="enemy136" parent="." unique_id=660610168 instance=ExtResource("2_k22gv")]
+position = Vector2(1263, -1336)
+
+[node name="enemy137" parent="." unique_id=424491235 instance=ExtResource("2_k22gv")]
+position = Vector2(1349, -1364)
+
+[node name="enemy138" parent="." unique_id=1500938980 instance=ExtResource("2_k22gv")]
+position = Vector2(1291, -1403)
+scale = Vector2(-1, 1)
+
+[node name="enemy139" parent="." unique_id=1320951099 instance=ExtResource("2_k22gv")]
+position = Vector2(1522, -1212)
+
+[node name="enemy140" parent="." unique_id=2064043206 instance=ExtResource("2_k22gv")]
+position = Vector2(1524, -1270)
+scale = Vector2(-1, 1)
+
+[node name="enemy141" parent="." unique_id=950612734 instance=ExtResource("2_k22gv")]
+position = Vector2(1509, -1324)
+
+[node name="enemy142" parent="." unique_id=1273245188 instance=ExtResource("2_k22gv")]
+position = Vector2(1427, -1341)
+
+[node name="enemy143" parent="." unique_id=1446372535 instance=ExtResource("2_k22gv")]
+position = Vector2(1489, -1404)
+scale = Vector2(-1, 1)
+
+[node name="enemy144" parent="." unique_id=1668268257 instance=ExtResource("2_k22gv")]
+position = Vector2(1615, -1287)
+
+[node name="enemy145" parent="." unique_id=890607549 instance=ExtResource("2_k22gv")]
+position = Vector2(1670, -1244)
+
+[node name="enemy146" parent="." unique_id=1945921769 instance=ExtResource("2_k22gv")]
+position = Vector2(1579, -1345)
+
+[node name="enemy147" parent="." unique_id=1345305126 instance=ExtResource("2_k22gv")]
+position = Vector2(1695, -1313)
+scale = Vector2(-1, 1)
+
+[node name="enemy148" parent="." unique_id=1253591676 instance=ExtResource("2_k22gv")]
+position = Vector2(1611, -1396)

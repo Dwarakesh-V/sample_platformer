@@ -1,6 +1,7 @@
 extends Area2D
 
-@onready var enemy_purple_1: Node2D = $"../enemy_purple_1"
+@onready var enemyplatform: Node2D = $"../enemyplatform"
+@onready var audio_stream_player_2d: AudioStreamPlayer2D = $AudioStreamPlayer2D
 
 var player_inside = false
 
@@ -15,4 +16,7 @@ func _on_body_exited(body: Node2D) -> void:
 
 func _process(delta):
 	if player_inside and Input.is_action_just_pressed("interact"):
-		get_tree().reload_scene("enemyPlatform1")
+		audio_stream_player_2d.play()
+		enemyplatform.queue_free()
+		#enemyplatform = preload("res://enem_plat.tscn").instantiate()
+		get_parent().add_child(enemyplatform)
