@@ -11,7 +11,6 @@ extends CharacterBody2D
 @onready var death_label: Label = $"../death/Control/Label"
 @onready var low_hp_timer: Timer = $low_hp_timer
 @onready var hurt: AudioStreamPlayer = $Hurt
-@onready var jump: AudioStreamPlayer = $Jump
 @onready var base: Node2D = $".."
 
 @onready var dash_timer: Timer = $DashTimer
@@ -32,7 +31,8 @@ var dashing = false
 var dash_ready = true
 var air_dash_available = true
 
-var hp = 3
+var max_hp = 5
+var hp = 5
 var dead = false
 var direction = 0
 var immune = false
@@ -74,7 +74,6 @@ func _physics_process(delta: float) -> void:
 			velocity.y = JUMP_VELOCITY
 		else:
 			velocity.y = -1*JUMP_VELOCITY
-		jump.play()
 
 		if jump_count == 2:
 			animated_sprite_2d.play("roll")
@@ -244,18 +243,6 @@ func die():
 
 	get_tree().reload_current_scene()
 	Engine.time_scale = 1
-	#dead = false
-	#animated_sprite_2d.flip_h = false
-	#animated_sprite_2d.play("idle")
-#
-	#hp = 3
-	#hpc.text = "HP: " + str(hp)
-#
-	#low_hp_timer.stop()
-	#low_hp_state = false
-	#hpb.get_node("Label").modulate = normal_label_color
-	#hpb.get_node("ColorRect").color = normal_bar_color
-
 
 func _on_low_hp_timer_timeout():
 	low_hp_state = !low_hp_state

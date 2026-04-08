@@ -18,5 +18,5 @@ func _process(delta):
 	if player_inside and Input.is_action_just_pressed("interact"):
 		audio_stream_player_2d.play()
 		enemyplatform.queue_free()
-		#enemyplatform = preload("res://enem_plat.tscn").instantiate()
+		enemyplatform = preload("res://enem_plat.tscn").instantiate()
 		get_parent().add_child(enemyplatform)

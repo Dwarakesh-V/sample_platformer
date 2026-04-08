@@ -53,9 +53,9 @@ text = "Action platformer practice prototype
 
 By Dwarakesh
 
-- Use the arrow keys to move, S to jump, and D to roll.
+- Use the arrow keys or WSAD to move, Space to jump, and Shift to dash.
 
-- You cannot be hit when rolling.
+- You cannot be hit when dashing.
 
 - Jump on an enemy to kill them."
 autowrap_mode = 2

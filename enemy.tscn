@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://cugqio7rwtfen" path="res://enemy.gd" id="1_4gyqm"]
 [ext_resource type="Texture2D" uid="uid://bok5w4u44a2gs" path="res://brackeys_platformer_assets/sprites/slime_green.png" id="2_qi2p4"]
-[ext_resource type="AudioStream" uid="uid://bg8a3vvaufudd" path="res://brackeys_platformer_assets/sounds/explosion.wav" id="3_qi2p4"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_iifgy"]
 atlas = ExtResource("2_qi2p4")
@@ -65,9 +64,5 @@ target_position = Vector2(7, 0)
 
 [node name="rcl" type="RayCast2D" parent="Area2D" unique_id=484776081]
 target_position = Vector2(-7, 0)
-
-[node name="Explosion" type="AudioStreamPlayer" parent="." unique_id=2030270530]
-stream = ExtResource("3_qi2p4")
-volume_db = -10.0
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

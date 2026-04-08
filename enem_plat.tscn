@@ -1,9 +1,11 @@
 [gd_scene format=3 uid="uid://bc7fhjk081gf2"]
 
 [ext_resource type="PackedScene" uid="uid://dd51dg2my10kv" path="res://enemy_purple.tscn" id="1_gnsmx"]
+[ext_resource type="Script" uid="uid://b2lvx1ihh45wm" path="res://fixinv.gd" id="1_k22gv"]
 [ext_resource type="PackedScene" uid="uid://bgn3o0a58aoj3" path="res://enemy.tscn" id="2_k22gv"]
 
 [node name="Node2D" type="Node2D" unique_id=1815236826]
+script = ExtResource("1_k22gv")
 
 [node name="enemy_purple_1" parent="." unique_id=1730704515 instance=ExtResource("1_gnsmx")]
 position = Vector2(1194, -150)
